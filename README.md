@@ -1,4 +1,4 @@
-#This is Project Five for SDMM - JS Calculator App
+# This is Project Five for SDMM - JS Calculator App
 
 ### About
 ![Static Badge](https://img.shields.io/badge/Create-have_fun-blue)
