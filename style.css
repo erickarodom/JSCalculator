@@ -18,3 +18,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.display-total {
+  text-align: end;
+}
