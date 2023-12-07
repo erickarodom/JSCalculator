@@ -8,7 +8,7 @@ No Frameworks used.
 
 **Focus on simplicity and getting the app to work.**
 
-Here is my working application:  [My Expense Tracker App](https://erickarodom.github.io/JSExpenseTrackerApp/)
+Here is my working application:  [My Calculator App](https://erickarodom.github.io/JSCalculator/)
 
 ![App Screenshot](./images/screenshot.jpg)
 
