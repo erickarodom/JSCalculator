@@ -26,7 +26,8 @@ calculator.addEventListener('click', function(e){
     }
 });
 
-function theMath(){
+function add(a,b){
+    return a + b;
 
 }
 
