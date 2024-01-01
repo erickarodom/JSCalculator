@@ -1,10 +1,12 @@
 
 let num1 = "";
 let num2= "";
-let symbols = "";
-let numBtn = document.querySelectorAll('.number-btn');
+let operator1 = "";
+let operator2 = "";
 
-const calculator = document.getElementById('calculator');
+
+
+const calculator = document.getElementById('calculator-body');
 
 const displayScreen = document.getElementById('displayTotal');
 
