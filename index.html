@@ -8,28 +8,36 @@
   </head>
   <body>
     <h1>JS Calculator</h1>
-    <main id="main" class="main">
+    <main id="main" class="main-container">
       <form id="calculator" class="calculator">
-        <div class="row">
-          <input type="button" class="btn number-btn" name="one" value="1" />
-          <input
-            type="button"
-            class="btn number number-btn"
-            name="two"
-            value="2"
-          />
-          <input type="button" class="btn number" name="three" value="3" />
-          <input type="button" class="btn operator" name="add" value="+" />
-        </div>
-        <div class="row">
-          <input type="button" class="btn number" name="four" value="4" />
-          <input type="button" class="btn number" name="five" value="5" />
-          <input type="button" class="btn number" name="six" value="6" />
-          <input type="button" class="btn operator" name="equals" value="=" />
-        </div>
         <div class="row-display">
           <button id="clearAll" type="button" class="btn number">C</button>
           <div id="displayTotal" class="display-total"></div>
+        </div>
+
+        <div class="row">
+          <input type="button" class="btn number-btn" name="one" value="1" />
+          <input type="button" class="btn number-btn" name="two" value="2" />
+          <input type="button" class="btn number-btn" name="three" value="3" />
+          <input type="button" class="btn operator" name="divide" value="/" />
+        </div>
+        <div class="row">
+          <input type="button" class="btn number-btn" name="five" value="4" />
+          <input type="button" class="btn number-btn" name="six" value="5" />
+          <input type="button" class="btn number-btn" name="seven" value="6" />
+          <input type="button" class="btn operator" name="multiply" value="*" />
+        </div>
+        <div class="row">
+          <input type="button" class="btn number-btn" name="four" value="7" />
+          <input type="button" class="btn number-btn" name="five" value="8" />
+          <input type="button" class="btn number-btn" name="six" value="9" />
+          <input type="button" class="btn operator" name="subtract" value="-" />
+        </div>
+        <div class="row">
+          <input type="button" class="btn number-btn" name="zero" value="0" />
+          <input type="button" class="btn operator" name="decimal" value="." />
+          <input type="button" class="btn operator" name="equal" value="=" />
+          <input type="button" class="btn operator" name="add" value="+" />
         </div>
       </form>
     </main>

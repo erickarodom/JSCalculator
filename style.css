@@ -12,6 +12,7 @@ body {
   width: 100%;
   height: 25px;
   border: 1px solid black;
+  text-align: end;
 }
 
 .row-display {
@@ -19,6 +20,6 @@ body {
   justify-content: space-between;
 }
 
-.display-total {
-  text-align: end;
+.btn {
+  width: 25.64px;
 }
