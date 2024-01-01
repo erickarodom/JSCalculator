@@ -1,13 +1,16 @@
 //variables=======================
 let num1 = "";
 let num2= "";
-let operator1 = "";
-let operator2 = "";
+let currentOperator1 = "";
+let priorOperator2 = "";
 
 const calculator = document.getElementById('calculator-body');
 const displayScreen = document.getElementById('displayTotal');
-const clearAllBtn = document.getElementById('clearAll');
+const clearAllBtn = document.querySelector('#clearAll');
+const calculateTotal = document.querySelector('#equalBtn');
 const getNumbers = document.querySelectorAll('.number-btn');
+const getOperators = document.querySelectorAll('.operator');
+
 
 //functions=====================
 
@@ -39,6 +42,8 @@ function multiply(a,b){
 function divide(a,b){
     return a / b;
 }
+
+function 
 
 function clearDisplay(){
     displayScreen.innerHTML = " ";
