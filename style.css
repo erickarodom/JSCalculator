@@ -15,7 +15,7 @@ body {
   text-align: end;
 }
 
-.row-display {
+.calculator-display {
   display: flex;
   justify-content: space-between;
 }
