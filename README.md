@@ -21,7 +21,7 @@ Here is my working application:  [My Calculator App](https://erickarodom.github.
 
 
 ## Summary
-This is a JS calculator. The user is able to perform simple arithmetic calculations and have the answer displayed.
+This is a JS calculator. The user is able to perform simple mathematical calculations and have the answer displayed.
 
 These are the highlights of this project: 
 - HTML, CSS scaffolding on this project is basic and quick.
@@ -29,7 +29,7 @@ These are the highlights of this project:
  - breaking down the functionality into digestible pieces.
  - while building the smaller pieces my understanding of functions, function scope, data type selection, and using loops was greatly enhanced!
 
-[My Live Application](https://erickarodom.github.io/JSExpenseTrackerApp/)
+[My Live Application](https://erickarodom.github.io/JSCalculator/)
 
 ## License
 Distributed under the MIT License.
