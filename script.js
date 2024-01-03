@@ -3,22 +3,21 @@ let num1 = "";
 let num2 = "";
 let operatorOne = "";
 let operatorTwo = "";
-
+const getNumbers = document.querySelectorAll('.number-btn');
+const getOperators = document.querySelectorAll('.operator');
 const displayScreen = document.getElementById('displayTotal');
 const clearAllBtn = document.querySelector('#clearAll');
 const equalityBtn = document.querySelector('#equalBtn');
-const getNumbers = document.querySelectorAll('.number-btn');
-const getOperators = document.querySelectorAll('.operator');
 
 
 //functions=====================
 
   getNumbers.forEach((number) => {
     number.addEventListener('click', (event) => {
-      number = event.target.value;
+     let number = event.target.value;
       showUserInput(number);
-    })
-  })
+    });
+  });
 
   getOperators.forEach((operator) => {
     operator.addEventListener('click', (event) => {
@@ -26,8 +25,8 @@ const getOperators = document.querySelectorAll('.operator');
       if (num1 && num2) {
         calculateTotal()
       }
-    })
-  })
+    });
+  });
 
 const showUserInput = (pressedNum) => {
     operatorTwo = operatorOne
@@ -40,7 +39,7 @@ const showUserInput = (pressedNum) => {
         num2 = num1;
         num1 = '';
         }
-        num1 = concat(pressedNum);
+        num1 = num1.concat(pressedNum);
         displayScreen.innerText = num1;
         return;
     }
