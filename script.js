@@ -21,68 +21,75 @@ const equalityBtn = document.querySelector('#equalBtn');
 
   getOperators.forEach((operator) => {
     operator.addEventListener('click', (event) => {
-      operatorOne = event.target.value
+      operatorOne = event.target.value;
       if (num1 && num2) {
         calculateTotal()
       }
     });
   });
 
-const showUserInput = (pressedNum) => {
-    operatorTwo = operatorOne
-    if (!operatorOne) {
-        num1 = num1.concat(pressedNum);
-        displayScreen.innerText = num1;
-    }
-    if (operatorOne || num2) {
-        if (!num2) {
-        num2 = num1;
-        num1 = '';
-        }
-        num1 = num1.concat(pressedNum);
-        displayScreen.innerText = num1;
-        return;
-    }
-}
-
-
-function calculateTotal() {
-
-    let numOne = parseInt(num1)
-    let numTwo = parseInt(num2)
-  
-    if (operatorTwo === '+') {
-        num2 = numOne + numTwo
-      displayTotal()
-    }
-    if (operatorTwo === '-') {
-        num2 = numTwo - numOne
-      displayTotal()
-    }
-    if (operatorTwo === '*') {
-        num2 = numOne * numTwo
-      displayTotal()
-    }
-    if (operatorTwo === '/') {
-        num2 = numTwo / numOne
-      displayTotal()
-    }
-  }
-
-function displayTotal() {
-displayScreen.textContent = parseFloat( num2)
-firstNumber = ''
-}
-
-equalityBtn.addEventListener('click', calculateTotal);
-
-function clearDisplay(){
+  function clearDisplay(){
     displayScreen.innerHTML = " ";
     num1 = "";
     num2 = "";
     operatorOne = "";
     operatorTwo = "";
   
+}
+
+equalityBtn.addEventListener('click', displayTotal);
+
+function showUserInput (pressedNum) {
+    operatorTwo = operatorOne 
+    if (!operatorOne) {
+        num1 = num1.concat(pressedNum);
+        displayScreen.innerText = num1;
+    }
+
+    if (operatorOne || num2) {
+        if (!num2) {
+        num2 = num1;
+        num1 = '';
+        }
+
+        num1 = num1.concat(pressedNum);
+        displayScreen.innerText = num1;
+
+        return;
+    }
+    
+}
+
+
+
+function calculateTotal() {
+ 
+    let numOne = parseFloat(num1);
+    let numTwo = parseFloat(num2);
+    
+    if (operatorTwo === '+') {
+        num2 = numOne + numTwo;
+        console.log(numOne, numTwo)
+      displayTotal();
+      console.log(numOne, numTwo)
+    }
+    if (operatorTwo === '-') {
+        num2 = numTwo - numOne;
+      displayTotal();
+    }
+    if (operatorTwo === '*') {
+        num2 = numOne * numTwo;
+      displayTotal();
+    }
+    if (operatorTwo === '/') {
+        num2 = numTwo / numOne;
+      displayTotal();
+    }
+  }
+
+function displayTotal() {
+displayScreen.innerHTML = num2;
+firstNumber = '';
 }
 
 clearAllBtn.addEventListener('click', clearDisplay);
