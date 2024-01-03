@@ -10,7 +10,7 @@ No Frameworks used.
 
 Here is my working application:  [My Calculator App](https://erickarodom.github.io/JSCalculator/)
 
-![App Screenshot](./images/screenshot.jpg)
+![App Screenshot](./images/calculator.jpg)
 
 
  ## Guidelines
