@@ -3,7 +3,7 @@
 ### About
 ![Static Badge](https://img.shields.io/badge/Create-have_fun-blue)
 
-This is a basic expense tracker built using JavaScript, HTML & CSS.
+This is a basic calculator built using JavaScript, HTML & CSS.
 No Frameworks used.
 
 **Focus on simplicity and getting the app to work.**
@@ -14,19 +14,18 @@ Here is my working application:  [My Calculator App](https://erickarodom.github.
 
 
  ## Guidelines
- - 🕰 Completion time is 1-3 week.
+ - 🕰 Completion time is 2 weeks.
  - 📚 No libraries or frameworks.
  - ![Static Badge](https://img.shields.io/badge/Trust_and_challenge-yourself-blue)
  -  Don't follow a tutorial or copy someone elses project code.
 
 
 ## Summary
-This is a JS expense tracker. The user can select from a selection of currencies, enter details about the item purchased, and add the item to a table that displays the items.
+This is a JS calculator. The user is able to perform simple arithmetic calculations and have the answer displayed.
 
 These are the highlights of this project: 
-- Naturally builds on skills/knowledge used building a JS ToDo App.
-- HTML, CSS scaffolding on this project is basic and quick.  Definately room to get creative.
-- The JavaScript for this project required me to stretch my JS logic muscles, easily the best   part of this project:
+- HTML, CSS scaffolding on this project is basic and quick.
+- The JavaScript for this project required me to stretch my JS logic muscles, easily the best part of this project:
  - breaking down the functionality into digestible pieces.
  - while building the smaller pieces my understanding of functions, function scope, data type selection, and using loops was greatly enhanced!
 
