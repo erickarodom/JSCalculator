@@ -32,7 +32,7 @@ const getOperators = document.querySelectorAll('.operator');
 const showUserInput = (pressedNum) => {
     operatorTwo = operatorOne
     if (!operatorOne) {
-        num1 += pressedNum;
+        num1 = num1.concat(pressedNum);
         displayScreen.innerText = num1;
     }
     if (operatorOne || num2) {
@@ -40,7 +40,7 @@ const showUserInput = (pressedNum) => {
         num2 = num1;
         num1 = '';
         }
-        num1 += pressedNum;
+        num1 = concat(pressedNum);
         displayScreen.innerText = num1;
         return;
     }
