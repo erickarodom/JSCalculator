@@ -7,43 +7,50 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>JS Calculator</h1>
-    <div id="main" class="main-container">
-      <div class="calculator-display">
-        <button id="clearAll" type="button" class="btn clear-btn">C</button>
-        <div id="displayTotal" class="display-total"></div>
+    <header><h1>JS Calculator</h1></header>
+    <main>
+      <div class="calculator-container">
+        <div class="calculator-display">
+          <button id="clearAll" type="button" class="btn clear-btn">C</button>
+          <div id="displayTotal" class="display-total"></div>
+        </div>
+        <div id="calculator-body" class="calculator-body">
+          <div class="row">
+            <button type="button" class="btn number-btn" value="1">1</button>
+            <button type="button" class="btn number-btn" value="2">2</button>
+            <button type="button" class="btn number-btn" value="3">3</button>
+            <button type="button" class="btn operator" value="/">/</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn number-btn" value="4">4</button>
+            <button type="button" class="btn number-btn" value="5">5</button>
+            <button type="button" class="btn number-btn" value="6">6</button>
+            <button type="button" class="btn operator" value="*">*</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn number-btn" value="7">7</button>
+            <button type="button" class="btn number-btn" value="8">8</button>
+            <button type="button" class="btn number-btn" value="9">9</button>
+            <button type="button" class="btn operator" value="-">-</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn number-btn" value="0">0</button>
+            <button
+              id="decimal-btn"
+              type="button"
+              class="btn number-btn"
+              value="."
+            >
+              .
+            </button>
+            <button id="equalBtn" type="button" class="btn operator" value="=">
+              =
+            </button>
+            <button type="button" class="btn operator" value="+">+</button>
+          </div>
+        </div>
       </div>
-      <div id="calculator-body" class="calculator-body">
-        <div class="row">
-          <button type="button" class="btn number-btn" value="1">1</button>
-          <button type="button" class="btn number-btn" value="2">2</button>
-          <button type="button" class="btn number-btn" value="3">3</button>
-          <button type="button" class="btn operator" value="/">/</button>
-        </div>
-        <div class="row">
-          <button type="button" class="btn number-btn" value="4">4</button>
-          <button type="button" class="btn number-btn" value="5">5</button>
-          <button type="button" class="btn number-btn" value="6">6</button>
-          <button type="button" class="btn operator" value="*">*</button>
-        </div>
-        <div class="row">
-          <button type="button" class="btn number-btn" value="7">7</button>
-          <button type="button" class="btn number-btn" value="8">8</button>
-          <button type="button" class="btn number-btn" value="9">9</button>
-          <button type="button" class="btn operator" value="-">-</button>
-        </div>
-        <div class="row">
-          <button type="button" class="btn number-btn" value="0">0</button>
-          <button id="decimal-btn" type="button" class="btn operator" value=".">
-            .
-          </button>
-          <button id="equalBtn" type="button" class="btn operator" value="=">
-            =
-          </button>
-          <button type="button" class="btn operator" value="+">+</button>
-        </div>
-      </div>
-    </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
